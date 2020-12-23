@@ -1,0 +1,225 @@
+:root {
+  --theme-color: #FF6033;
+  --theme-color-rgb: 255, 96, 51;
+}
+html,
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+a {
+  color: var(--theme-color);
+}
+h1 {
+  font-size: 3em;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 2.5em;
+  line-height: 1.25;
+  margin: 0.75em 0 0.5em;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 40px;
+  box-sizing: border-box;
+  
+}
+header, section, footer {
+  margin: 40px 0;
+}
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.avatar {
+  border: 4px solid #444;
+  border-radius: 50%;
+  width: 20%;
+  margin-right: 40px;
+  height: auto;
+}
+
+.header-content {
+  width: 100%;
+  min-width: 0;
+}
+header h1 {
+  line-height: 1.2;
+  margin: 0;
+}
+.subtitle {
+  margin: 1em 0;
+}
+.subtitle span.dot {
+  font-size: 14px;
+  opacity: 0.5;
+}
+.subtitle span[role="img"] {
+  vertical-align: middle;
+  font-size: 1.5em;
+}
+.contacts a {
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  display: inline-flex;
+  font-size: 14px;
+  align-items: center;
+  vertical-align: middle;
+}
+.contacts a:hover {
+  background: rgba(255,255,255,0.125);
+}
+.contacts a:active {
+  background: rgba(255,255,255,0.075);
+}
+.contacts .icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+.contacts img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Widgets */
+.branding {
+  margin-top: -0.25em;
+  margin-bottom: 2em;
+}
+.widget {
+  --preloader-color: var(--theme-color);
+}
+.widget + .widget {
+  margin-top: 16px;
+}
+codersrank-summary {
+  --bg-color: transparent;
+  --badge-bg-color: #161616;
+  --badge-text-color: #fff;
+  --badges-padding: 0px;
+  --badge-padding: 8px;
+  --badge-margin: 16px;
+  --badge-border-radius: 8px;
+  --badge-rank-font-size: 16px;
+  --badge-technology-font-size: 18px;
+  --badge-location-font-size: 16px;
+  --badge-icon-size: 32px;
+  --badge-border: 1px solid rgba(0, 0, 0, 0.1);
+  --badge-box-shadow: none;
+}
+.activity-widget {
+  padding: 8px;
+  border-radius: 8px;
+  background: #161616;
+}
+codersrank-activity {
+  --bg-color-0: #111;
+  --bg-color-1: rgba(var(--theme-color-rgb), 0.25);
+  --bg-color-2: rgba(var(--theme-color-rgb), 0.5);
+  --bg-color-3: rgba(var(--theme-color-rgb), 0.75);
+  --bg-color-4: rgba(var(--theme-color-rgb), 1);
+  --label-text-color: rgba(255, 255, 255, 0.54);
+  --svg-width: 1080px;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  padding-top: 100px;
+  margin-top: -100px;
+}
+codersrank-skills-chart {
+  --label-text-color: rgba(255, 255, 255, 0.54);
+  --chart-bg-color: #161616;
+  --chart-border-radius: 8px;
+  --axis-bg-color: transparent;
+  --label-font-size: 12px;
+  overflow: hidden;
+}
+codersrank-portfolio,
+codersrank-work-experience,
+codersrank-education {
+  --item-bg-color: #161616;
+  --item-border-radius: 8px;
+  --item-spacing: 16px;
+  --item-padding: 16px;
+  --logo-size: 64px;
+  --tag-bg-color: rgba(255,255,255,0.075);
+}
+codersrank-portfolio {
+  --grid-columns: 2;
+  
+  --link-text-color: var(--theme-color);
+  --link-bg-color: rgba(255,255,255,0.1);
+  --link-hover-bg-color: rgba(255,255,255,0.125);
+  --link-active-bg-color: rgba(255,255,255,0.075);
+  --link-border-radius: 8px;
+  --link-padding: 4px 8px;
+  --link-text-transform: none;
+  --link-font-weight: 500;
+  --link-margin: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  opacity: 0.55;
+}
+
+@media (max-width: 768px) {
+  header {
+    display: block;
+  }
+  .avatar {
+    width: 160px;
+    margin-bottom: 20px;
+  }
+  codersrank-portfolio,
+  codersrank-work-exprerience,
+  codersrank-education {
+    --grid-columns: 1;
+    --item-spacing: 8px;
+    --logo-size: 48px;
+  }
+}
+@media (max-width: 640px) {
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .widget + .widget {
+    margin-top: 8px;
+  }
+  codersrank-summary {
+    --badge-margin: 8px;
+  }
+  codersrank-activity {
+    --svg-width: 640px
+  }
+}
