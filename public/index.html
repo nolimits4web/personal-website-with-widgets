@@ -11,7 +11,7 @@
     <header>
       <img src="i/avatar.jpg" alt="Avatar" class="avatar">
       <div class="header-content">
-        <h1>Hi 🖐<br />My name is Gerardo Ezequiel</h1>
+        <h1><br />Gerardo Ezequiel</h1>
         <div class="subtitle">
           Spatial Data Scientist <span class="dot">•</span>
           Full Stack Web Developer <span class="dot">•</span>
@@ -49,13 +49,14 @@
       </div>
     </header>
     <section>
-      <h2>My Coding Activity & Stats</h2>
-      <p class="branding">Powered by <a href="https://profile.codersrank.io/user/gerardoezequiel" target="_blank" rel="noopener noreferrer">CodersRank</a></p>
+      <h2></h2>
+      <codersrank-timeline username="gerardoezequiel" type="technologies" branding="false"></codersrank-timeline>
+      <!-- <p class="branding">Powered by <a href="https://profile.codersrank.io/user/gerardoezequiel" target="_blank" rel="noopener noreferrer">CodersRank</a></p> -->
       <codersrank-summary
         class="widget"
         username="gerardoezequiel"
         show-avatar="true"
-        show-header="true"
+        show-header="false"
         min-width="420"
         branding="false"
       ></codersrank-summary>
@@ -80,18 +81,18 @@
         skills="JavaScript,CSS,Less,Vue,Svelte,TypeScript,CSS,HTML"
         svg-width="1120"
         svg-height="400"
-        branding="true"
+        branding="false"
       ></codersrank-skills-chart>
     </section>
     <section>
       <h2>Recent Projects</h2>
-      <p>I am very passionate about building mobile and desktop web applications, user interfaces, and contributing to open-source community by creating great and popular open-source projects.</p>
+      <p>Interested in city analysis from a transdisciplinary perspective with a particular interest in urban metabolism. I analyze data with a geospatial component to understand its complexity and develop tools like web mpas to be able to visualize these phenomena.</p>
       <codersrank-portfolio
         class="widget"
         username="gerardoezequiel"
         grid
         company="true"
-        branding="true"
+        branding="false"
       ></codersrank-portfolio>
     </section>
     <section>
@@ -100,12 +101,12 @@
         class="widget"
         username="gerardoezequiel"
         logos
-        branding="true"
+        branding="false"
       ></codersrank-work-experience>
       <codersrank-education
         class="widget"
         username="gerardoezequiel"
-        branding="true"
+        branding="false"
       ></codersrank-education>
     </section>
 
@@ -114,6 +115,7 @@
 
   <script src="https://unpkg.com/@codersrank/summary/codersrank-summary.min.js"></script>
   <script src="https://unpkg.com/@codersrank/activity/codersrank-activity.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/timeline@x.x.x/codersrank-timeline.min.js"></script>
   <script src="https://unpkg.com/@codersrank/skills-chart/codersrank-skills-chart.min.js"></script>
   <script src="https://unpkg.com/@codersrank/portfolio/codersrank-portfolio.min.js"></script>
   <script src="https://unpkg.com/@codersrank/work-experience/codersrank-work-experience.min.js"></script>
@@ -121,3 +123,4 @@
   
 </body>
 </html>
+

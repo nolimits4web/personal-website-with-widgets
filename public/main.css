@@ -1,7 +1,18 @@
 :root {
   --theme-color: #FF6033;
   --theme-color-rgb: 255, 96, 51;
+  --timeline-item-bg-color: rgba(197, 31, 31, 0.719) !important;
+  --col-width: 30px;
 }
+
+host {
+  --timeline-item-bg-color: rgba(197, 31, 31, 0.719) !important;
+}
+
+.codersrank-timeline-item{
+  background-color: rgba(197, 31, 31, 0.719) !important;
+}
+
 html,
 body {
   position: relative;
@@ -178,6 +189,12 @@ codersrank-portfolio {
   --link-font-weight: 500;
   --link-margin: 8px;
 }
+
+codersrank-timeline {
+  --timeline-item-bg-color: rgba(197, 31, 31, 0.719) !important;
+}
+
+
 
 /* Footer */
 footer {
